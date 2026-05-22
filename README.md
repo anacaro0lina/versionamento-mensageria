@@ -27,7 +27,7 @@ Este repositório foi criado com o objetivo de:
 
 ## 🗂️ Estrutura do Repositório
 
-```
+```bash
 📁 versionamento/
 ├── 📄 README.md
 ├── 📁 docs/          # Documentações e anotações
@@ -53,7 +53,7 @@ Este repositório foi criado com o objetivo de:
 
 ## 🚀 Como Começar
 
-```
+```bash
 # Clonar o repositório
 git clone https://github.com/prof-andrericardo/versionamento.git
 
@@ -65,7 +65,7 @@ cd versionamento
 
 ## 🔄 Fluxo de Trabalho Básico
 
-```
+```bash
 # Verificar status
 git status
 
@@ -83,7 +83,7 @@ git push origin main
 
 ## 🌿 Trabalhando com Branches
 
-```
+```bash
 # Criar nova branch
 git checkout -b minha-feature
 
@@ -92,6 +92,37 @@ git checkout main
 
 # Mesclar branch
 git merge minha-feature
+```
+
+---
+
+## 🌳 Git Flow
+
+O Git Flow é uma estratégia de organização de branches muito utilizada em equipes para manter o desenvolvimento estruturado.
+
+### Principais branches
+
+* `main` → versão estável do projeto
+* `develop` → branch de desenvolvimento
+* `feature/*` → novas funcionalidades
+* `hotfix/*` → correções urgentes
+* `release/*` → preparação para novas versões
+
+### Exemplo de fluxo
+
+```bash
+# Criar branch de funcionalidade
+git checkout -b feature/login
+
+# Fazer alterações e commit
+git add .
+git commit -m "feat: adiciona tela de login"
+
+# Voltar para develop
+git checkout develop
+
+# Mesclar funcionalidade
+git merge feature/login
 ```
 
 ---
@@ -109,7 +140,7 @@ git merge minha-feature
 
 ## 🧠 Exemplo de Commits
 
-```
+```bash
 feat: adiciona funcionalidade de login
 fix: corrige erro de validação
 docs: atualiza README
@@ -133,7 +164,7 @@ Capacitar o desenvolvedor a:
 
 Sinta-se à vontade para contribuir! 💡
 
-```
+```bash
 # Fork o projeto
 # Crie uma branch
 git checkout -b minha-contribuicao
@@ -155,7 +186,7 @@ Este projeto está sob a licença MIT. 📜
 
 ## 👨‍🏫 Autor
 
-Desenvolvido para fins educacionais 💙
+Desenvolvido para fins educacionais 💙  
 Professor & Desenvolvedor
 
 ---
